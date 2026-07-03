@@ -1,0 +1,19 @@
+Put your photos in THIS folder with these EXACT names (lowercase, .jpg):
+
+hero.jpg                  -> big home page background photo
+about.jpg                 -> photo for the About section
+
+naya-nazimabad-1.jpg      -> Naya Nazimabad main photo
+naya-nazimabad-2.jpg      -> Naya Nazimabad photo 2
+naya-nazimabad-3.jpg      -> Naya Nazimabad photo 3
+
+bahria-town-1.jpg         -> Bahria Town main photo
+bahria-town-2.jpg         -> Bahria Town photo 2
+bahria-town-3.jpg         -> Bahria Town photo 3
+
+al-jannat-city-1.jpg      -> Al Jannat City main photo
+al-jannat-city-2.jpg      -> Al Jannat City photo 2
+al-jannat-city-3.jpg      -> Al Jannat City photo 3
+
+Until a photo is added, the site shows a golden "Photo Coming Soon"
+placeholder automatically, so nothing ever looks broken.
