@@ -190,6 +190,24 @@ var MI_CONFIG = {
       });
     }
 
+    /* ----- FAQ accordion ----- */
+    document.querySelectorAll(".faq-q").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var item = btn.closest(".faq-item");
+        var answer = item.querySelector(".faq-a");
+        var isOpen = item.classList.contains("open");
+        // close others in the same list
+        item.parentElement.querySelectorAll(".faq-item.open").forEach(function (other) {
+          other.classList.remove("open");
+          other.querySelector(".faq-a").style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add("open");
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      });
+    });
+
     /* ----- Lightbox for project photos ----- */
     var lb = document.querySelector(".lightbox");
     if (lb) {
