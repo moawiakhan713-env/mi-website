@@ -15,13 +15,13 @@
 var MI_CONFIG = {
 
   // Your phone number as people should read it:
-  phoneDisplay: "+92 300 0000000",
+  phoneDisplay: "+92 316 2881186",
 
   // Same number for dialing (no spaces or dashes, keep the +92):
-  phoneDial: "+923000000000",
+  phoneDial: "+923162881186",
 
   // WhatsApp number (digits only, country code first, NO + sign):
-  whatsapp: "923000000000",
+  whatsapp: "923162881186",
 
   // Your email address:
   email: "info@mirealestate.pk",
