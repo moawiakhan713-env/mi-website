@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1b1e25"/>
-      <stop offset="1" stop-color="#0c0d10"/>
+      <stop offset="0" stop-color="#16232f"/>
+      <stop offset="1" stop-color="#0b1119"/>
     </linearGradient>
   </defs>
   <rect width="800" height="600" fill="url(#bg)"/>
   <!-- skyline -->
-  <g fill="none" stroke="#c9a24b" stroke-width="2" opacity="0.55">
+  <g fill="none" stroke="#4a90d9" stroke-width="2" opacity="0.55">
     <rect x="150" y="270" width="90" height="190"/>
     <rect x="260" y="200" width="110" height="260"/>
     <rect x="390" y="240" width="80" height="220"/>
@@ -27,6 +27,6 @@
     <rect x="410" y="300" width="14" height="14"/>
     <rect x="438" y="300" width="14" height="14"/>
   </g>
-  <text x="400" y="515" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#e2b95b">MI Real Estate &amp; Construction</text>
-  <text x="400" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" letter-spacing="3" fill="#a9adb6">PHOTO COMING SOON</text>
+  <text x="400" y="515" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#3d9ae0">MI Real Estate &amp; Construction</text>
+  <text x="400" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" letter-spacing="3" fill="#9aa4ad">PHOTO COMING SOON</text>
 </svg>

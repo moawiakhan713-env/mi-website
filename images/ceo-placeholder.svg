@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16232f"/>
+      <stop offset="1" stop-color="#0b1119"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="700" fill="url(#bg)"/>
+  <g fill="none" stroke="#4a90d9" stroke-width="3" opacity="0.6">
+    <circle cx="300" cy="250" r="90"/>
+    <path d="M120 560 C120 440 200 390 300 390 C400 390 480 440 480 560"/>
+  </g>
+  <text x="300" y="620" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#3d9ae0">CEO Photo</text>
+  <text x="300" y="652" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" letter-spacing="3" fill="#9aa4ad">COMING SOON</text>
+</svg>

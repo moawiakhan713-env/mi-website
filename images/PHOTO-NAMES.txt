@@ -2,6 +2,11 @@ Put your photos in THIS folder with these EXACT names (lowercase, .jpg):
 
 hero.jpg                  -> big home page background photo
 about.jpg                 -> photo for the About section
+logo.png                  -> your company logo (appears in the header
+                             automatically once this file exists)
+ceo.jpg                   -> CEO portrait photo for the homepage
+                             CEO section (a vertical/portrait photo
+                             works best)
 
 naya-nazimabad-1.jpg      -> Naya Nazimabad main photo
 naya-nazimabad-2.jpg      -> Naya Nazimabad photo 2

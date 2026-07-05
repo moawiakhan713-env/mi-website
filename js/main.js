@@ -80,18 +80,30 @@ var MI_CONFIG = {
 
     /* ----- Missing photos: show branded placeholder ----- */
     document.querySelectorAll("img[data-fallback]").forEach(function (img) {
+      var fb = img.getAttribute("data-fallback") || "images/placeholder.svg";
+      var fbName = fb.split("/").pop();
       img.addEventListener("error", function () {
-        if (img.src.indexOf("placeholder.svg") === -1) {
-          img.src = img.closest("body") ? relativePrefix() + "images/placeholder.svg" : "images/placeholder.svg";
-        }
+        if (img.src.indexOf(fbName) === -1) img.src = fb;
       });
       // Trigger check for already-failed images
-      if (img.complete && img.naturalWidth === 0) {
-        img.src = relativePrefix() + "images/placeholder.svg";
+      if (img.complete && img.naturalWidth === 0 && img.src.indexOf(fbName) === -1) {
+        img.src = fb;
       }
     });
 
-    function relativePrefix() { return ""; }
+    /* ----- Company logo in header (only if images/logo.png exists) ----- */
+    var logoTest = new Image();
+    logoTest.onload = function () {
+      document.querySelectorAll(".brand-mark").forEach(function (mark) {
+        mark.textContent = "";
+        var im = document.createElement("img");
+        im.src = "images/logo.png";
+        im.alt = "MI Real Estate logo";
+        mark.appendChild(im);
+        mark.classList.add("has-logo");
+      });
+    };
+    logoTest.src = "images/logo.png";
 
     /* ----- Hero background photo (only if images/hero.jpg exists) ----- */
     var heroPhoto = document.querySelector(".hero-photo");
