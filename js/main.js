@@ -27,7 +27,7 @@ var MI_CONFIG = {
   email: "info@mirealestate.pk",
 
   // Office address (shown in Contact page and footer):
-  address: "Office # — , Main Boulevard, Karachi, Pakistan",
+  address: "C6, Al Jannat City Housing Society, Scheme 43, Karachi, Pakistan",
 
   // Office hours:
   hours: "Mon – Sat: 10:00 AM – 8:00 PM",

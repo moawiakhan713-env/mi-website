@@ -526,7 +526,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; line-height: 1
 }
 .step-num { font-family: var(--font-head); font-size: 44px; color: rgba(18,104,181,0.4); font-weight: 700; line-height: 1; margin-bottom: 14px; }
 .step h3 { font-size: 18px; margin-bottom: 8px; color: #152230; }
-.step p { font-size: 14px; }
+.step p { font-size: 14px; color: var(--muted-on-light); }
 
 /* ---------- Footer ---------- */
 
@@ -601,6 +601,18 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; line-height: 1
   display: block;
 }
 .look-tile:hover { transform: translateY(-5px); border-color: var(--gold); box-shadow: var(--shadow); }
+
+/* Hover: the hovered tile pops up, its neighbours shrink and fade */
+@media (hover: hover) {
+  .lookfor-grid:hover .look-tile { transform: scale(0.93); opacity: 0.55; }
+  .lookfor-grid .look-tile:hover { transform: scale(1.08) translateY(-8px); opacity: 1; border-color: var(--gold); box-shadow: var(--shadow); z-index: 2; }
+  .look-tile { position: relative; }
+
+  .steps-grid:hover .step { transform: scale(0.94); opacity: 0.55; }
+  .steps-grid .step:hover { transform: scale(1.06) translateY(-6px); opacity: 1; box-shadow: var(--shadow); z-index: 2; }
+}
+.step { transition: transform 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease; }
+.look-tile { transition: transform 0.25s ease, opacity 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease; }
 .look-tile .service-icon { margin: 0 auto 14px; }
 .look-tile b { display: block; font-size: 15px; color: #152230; }
 .look-tile span { font-size: 12.5px; color: var(--muted-on-light); }
