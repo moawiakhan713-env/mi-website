@@ -303,6 +303,16 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; line-height: 1
 .ceo-who b { display: block; font-family: var(--font-head); font-size: 21px; color: var(--gold-soft); }
 .ceo-who span { font-size: 13.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted-on-dark); }
 
+.ceo-sign {
+  font-family: "Great Vibes", "Segoe Script", "Brush Script MT", cursive;
+  font-size: 44px;
+  line-height: 1.2;
+  color: var(--gold-strong);
+  margin-top: 18px;
+  transform: rotate(-3deg);
+  transform-origin: left center;
+}
+
 @media (max-width: 1000px) {
   .ceo-split { grid-template-columns: 1fr; }
   .ceo-photo-wrap { margin: 0 auto; }
