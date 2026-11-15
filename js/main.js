@@ -73,7 +73,11 @@ var MI_CONFIG = {
 
     var socials = { facebook: ".js-facebook", instagram: ".js-instagram", youtube: ".js-youtube", tiktok: ".js-tiktok" };
     Object.keys(socials).forEach(function (key) {
-      setAll(socials[key], function (el) { el.href = MI_CONFIG[key] || "#"; });
+      setAll(socials[key], function (el) {
+        var link = MI_CONFIG[key];
+        if (!link || link === "#") { el.hidden = true; return; }  // no dead links
+        el.href = link; el.target = "_blank"; el.rel = "noopener";
+      });
     });
 
     setAll(".js-year", function (el) { el.textContent = new Date().getFullYear(); });
