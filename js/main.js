@@ -24,7 +24,7 @@ var MI_CONFIG = {
   whatsapp: "923162881186",
 
   // Your email address:
-  email: "info@mirealestate.pk",
+  email: "info@mi-realestate.pk",
 
   // Office address (shown in Contact page and footer):
   address: "C6, Al Jannat City Housing Society, Scheme 43, Karachi, Pakistan",

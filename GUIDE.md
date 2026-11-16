@@ -113,3 +113,27 @@ The website is a fast, secure "static" site — it has no server programs to hac
 ---
 
 *Website built for MI Real Estate & Construction, Karachi.*
+
+---
+
+## 9. Getting the site on Google (do this once, after uploading)
+
+**A. Google Search Console (makes Google index the site)**
+1. Go to https://search.google.com/search-console and sign in with your Google account.
+2. Click **Add property** → choose **URL prefix** → enter `https://mi-realestate.pk` → Continue.
+3. Choose the **HTML file** verification method. Google gives you a small file (like `google1234abcd.html`). Download it and upload it into `public_html` on Hostinger, next to `index.html`. Click **Verify**.
+4. In the left menu open **Sitemaps** → type `sitemap.xml` → **Submit**.
+5. In the top search bar paste `https://mi-realestate.pk/` → press Enter → click **Request indexing**. Repeat for the other 4 pages.
+
+Google usually shows the site within a few days to two weeks.
+
+**B. Google Business Profile (shows your office on Google Maps, most important for Karachi searches)**
+1. Go to https://business.google.com → **Add your business**.
+2. Name: `MI Real Estate & Construction`. Category: `Real estate agency` (add `Construction company` as a second category).
+3. Address: `C6, Al Jannat City Housing Society, Scheme 43, Karachi`. Phone: `0316-2881186`. Website: `https://mi-realestate.pk`.
+4. Verify (Google will call, text, or ask for a short video of the office).
+5. Add the office photos and logo, set opening hours, and ask happy clients to leave reviews there.
+
+Keep the name, address and phone exactly the same everywhere (website, Google, Facebook). Google checks that they match.
+
+**Whenever you change the site later:** open Search Console → paste the changed page URL → Request indexing.
